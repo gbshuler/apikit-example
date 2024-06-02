@@ -14,6 +14,8 @@
                 <http:headers>#[vars.outboundHeaders default {}]</http:headers>
             </http:error-response>
         </http:listener>
+        <logger level="INFO" doc:name="Logger" doc:id="bb379e69-f54b-42a4-b2c7-75e4c4a9332a" message="Call Received"/>
+		<set-payload value="Successful Call" doc:name="Set Payload" doc:id="51bc46bb-c0f1-4269-beed-cc366a8e2541" />
 		<apikit:router config-ref="accounts-api-config" />
         <error-handler>
             <on-error-propagate type="APIKIT:BAD_REQUEST">
@@ -132,9 +134,9 @@ output application/json
 [
   {
     id: "1",
-    firstName: "John",
-    lastName: "Snow",
-    address: "4040 Briar Thorn, Castle Black, North",
+    firstName: "Max",
+    lastName: "Mule",
+    address: "4040 Briar Thorn, Crawfordsville, IN",
     postal: "47903",
     country: "USA",
     miles: 200,
