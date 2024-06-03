@@ -134,8 +134,8 @@ output application/json
 [
   {
     id: "1",
-    firstName: "Max",
-    lastName: "Mule",
+    firstName: "Maximillion",
+    lastName: "Schnell",
     address: "4040 Briar Thorn, Crawfordsville, IN",
     postal: "47903",
     country: "USA",
